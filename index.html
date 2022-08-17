@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- title -->
+  <title>ootini</title>
+
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- link -->
+  <link rel="stylesheet" href="./resources/css/index.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+
+  <!-- script -->
+  <script src="./resources/js/index.js" defer></script>
+  
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <div class="container">
+        <div class="logo-wrapper">
+          <span class="logo">ootani</span>
+        </div>
+        <div class="searchBar-wrapper">
+          <input 
+            name="searchBar" 
+            class="searchBar" 
+            type="text" 
+            placeholder="Search"
+          >
+        </div>
+        <div class="searchButton-wrapper">
+          <button
+          type="submit" 
+          class="searchButton button"
+          onclick="addSearchGifsToMainPage()"
+          >Search</button>
+        </div>
+        <div class="clearButton-wrapper" style="display: none;">
+          <button 
+          class="clearButton button"
+          onclick="clearSearch()"
+          >Clear</button>
+        </div>
+        <div class="languageSwitcher-wrapper">
+          <select class="languageSwitcher button">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+
+        <section class="searchGifsBlock">
+          <fieldset>
+            <legend><h2 class="searchLegend"></h2></legend>
+            <div class="searchGifs-wrapper wrapper">
+
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="trendingGifsBlock">
+          <fieldset>
+            <legend><h2>Trending</h2></legend>
+            <div class="trendingGifs-wrapper wrapper">
+
+            </div>
+          </fieldset>
+        </section>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
